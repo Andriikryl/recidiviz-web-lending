@@ -523,3 +523,62 @@ padding-block: 16px;
   color: rgba(53, 83, 98, 0.6);
 }
 
+.grafix{
+  background-color: hsla(180, 5%, 96%, 1);
+}
+
+.grafix__img{
+  width: 100%;
+}
+
+/*====================== information*/
+
+.information {
+  padding-block-end: 140px;
+}
+
+.information__text{
+  grid-column: 6 span;
+}
+
+.information__title{
+  max-width: 80%;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 38px;
+  letter-spacing: 1.2px;
+  color: #003331;
+}
+
+.information__list{
+  grid-column: 7 / 6 span;
+  display: grid;
+  row-gap: 36px;
+  column-gap: 48px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.information__item{
+  grid-column: 3 span;
+}
+
+.information__subtitle{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #003331;
+  margin-block-end: 4px;
+}
+
+.information__desc{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(53, 83, 98, 0.8);
+}
