@@ -308,3 +308,117 @@ margin-block-end: 15px;
   color: rgba(53, 83, 98, 0.8);
 }
 
+/* ====================== approach */
+
+.approach__top{
+  padding-block: 80px;
+  background-color: hsla(180, 7%, 97%, 1);
+}
+
+.approach__title{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 22px;
+color: #003331;
+margin-block-end: 13px;
+}
+
+.approach__left{
+  grid-column: 5 span;
+  padding-block-start: 33px;
+}
+
+.approach__right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 8px;
+  grid-column: 7 / 6 span;
+}
+
+.approach__descr{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: rgba(53, 83, 98, 0.8);
+margin-block-end: 37px;
+}
+
+.approach__btn{
+  border: 1px solid rgba(53, 83, 98, 0.2);
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02px;
+  color: #00413E;
+}
+
+.approach__btn:hover{
+  color: #FFFFFF;
+}
+
+.approach__bottom{
+  padding-block: 24px;
+}
+
+
+.approach__item{
+  grid-column: 2 span;
+}
+
+.approach__link{
+  display: block;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(53, 83, 98, 0.8);
+  padding-block-start: 17px;
+  padding-inline-start: 32px;
+  border-top: 1px solid  rgba(53, 83, 98, 0.3);;
+  transition: all .9s ease;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  background-position: left top 15px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+.approach__link--ted{
+  background-image: url(./images/approach/ted.svg);
+}
+
+.approach__link--time{
+  background-image: url(./images/approach/time.svg);
+}
+
+.approach__link--nut{
+  background-image: url(./images/approach/ny.svg);
+}
+
+.approach__link--greethlink{
+  background-image: url(./images/approach/fr.svg);
+}
+
+.approach__link--press{
+  background-image: url(./images/approach/ap.svg);
+}
+
+.approach__link--scoop{
+  background-image: url(./images/approach/ss.svg);
+}
+
+.approach__link:hover{
+  border-top: 5px solid hsla(176, 100%, 20%, 1);
+  color: #f4a261;
+}
