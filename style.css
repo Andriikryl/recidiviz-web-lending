@@ -53,6 +53,36 @@ a{
   padding-inline: 20px;
 }
 
+.btn{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 13px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.02px;
+   border: 1px solid rgba(255, 255, 255, 0.3 );
+   color: white;
+   cursor: pointer;
+   background-color: transparent;
+   padding: 17px 33px;
+   border-radius: 80px ;
+   -webkit-border-radius: 80px ;
+   -moz-border-radius: 80px ;
+   -ms-border-radius: 80px ;
+   -o-border-radius: 80px ;
+   transition: all 0.7s ease;
+   -webkit-transition: all 0.7s ease;
+   -moz-transition: all 0.7s ease;
+   -ms-transition: all 0.7s ease;
+   -o-transition: all 0.7s ease;
+}
+
+.btn:hover{
+  background-color: hsla(177, 97%, 15%, 1);
+  border-color: tomato;
+}
+
 /*===================== header */
 
 .header--position{
@@ -105,10 +135,80 @@ a{
 /*===============  hearo */
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 190px;
+  padding-block-end: 40px;
   min-height: 776px;
   background-image: url(./images/hearo/hearo-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
 }
 
+.hero__content{
+  grid-column: 6 span;
+}
+
+.hero__title{
+  font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 44px;
+letter-spacing: 1.2px;
+color: #FFFFFF;
+margin-block-end: 29px;
+}
+
+.hero__descr{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-block-end: 29px;
+}
+
+.hero__subtitle{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #FFFFFF;
+margin-block-end: 15px;
+}
+
+.hero__item{
+  grid-column: 2 span;
+}
+
+.hero__link{
+  display: block;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding-block-start: 17px;
+  border-top: 1px solid  rgba(255, 255, 255, 0.6);
+  transition: all .9s ease;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  -o-transition: all .9s ease;
+}
+
+.hero__link:hover{
+  border-top: 5px solid hsla(176, 100%, 20%, 1);
+  color: #f4a261;
+}
+
+.hero__bottom-container{
+  margin-top: auto;
+  width: 100%;
+}
