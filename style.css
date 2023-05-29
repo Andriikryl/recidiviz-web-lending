@@ -483,3 +483,43 @@ margin-block-end: 37px;
   color: #FFFFFF;
   max-width: 542px;
 }
+
+/*================ partners */
+
+.partners {
+padding-block: 16px;
+}
+
+.partners__container{
+  align-items: center;
+  gap: 6px;
+}
+
+.partners__list{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.partners__title{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(53, 83, 98, 0.6);
+}
+
+.partners__more{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(53, 83, 98, 0.6);
+}
+
