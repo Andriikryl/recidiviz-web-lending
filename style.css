@@ -33,6 +33,7 @@ li::marker{
 
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 /*=======================utils*/
@@ -581,4 +582,110 @@ padding-block: 16px;
   font-size: 15px;
   line-height: 24px;
   color: rgba(53, 83, 98, 0.8);
+}
+
+/* ======================= press */
+
+.press {
+  background-color: #FFFFFF;
+  padding-block-start: 87px;
+}
+
+.press__top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 33px;
+}
+
+.press__title{
+font-family: 'Libre Baskerville';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 38px;
+letter-spacing: 1.2px;
+color: #003331;
+}
+
+.press__link{
+  border: 1px solid rgba(53, 83, 98, 0.2);
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02px;
+  color: #00413E;
+}
+
+.press__link:hover{
+  color: white;
+}
+
+.press__item{
+  grid-column: 4 span;
+}
+
+.press__list{
+  row-gap: 32px;
+}
+
+.press-card{
+  min-height: 145px;
+  position: relative;
+}
+
+.press-card__top{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-block-end: 11px;
+}
+
+.press-card__date{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 16px;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+color: rgba(53, 83, 98, 0.6);
+}
+
+.press-card__author{
+  margin-block: -18px;
+  padding-block: 18px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(53, 83, 98, 0.6);
+  padding-inline-start: 32px;
+  background-position: left top 15px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+.press-card__author--ted{
+  background-image: url(./images/approach/ted.svg);
+}
+
+.press-card__title{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  color: #00413E;  
+}
+.press-card__link::after{
+  content: "";
+  position: absolute;
+  inset: 0;
 }
