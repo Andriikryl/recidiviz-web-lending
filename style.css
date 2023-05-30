@@ -738,3 +738,17 @@ margin-block-end: 37px;
   letter-spacing: 0.02px;
   color: #FFFFFF;
 }
+
+/*================== footer */
+
+.footer__top{
+  background-color: hsla(180, 100%, 4%, 1);
+}
+
+.footer__column{
+  grid-column:  2 span;
+}
+
+.footer__column:last-child{
+  grid-column: 10 / 2 span;
+}
