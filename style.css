@@ -327,7 +327,7 @@ margin-block-end: 15px;
   grid-column: 2 span;
 }
 
-.hero__link{
+.hero__item{
   display: block;
   font-family: 'Public Sans';
   font-style: normal;
@@ -344,14 +344,34 @@ margin-block-end: 15px;
   -o-transition: all .9s ease;
 }
 
-.hero__link:hover{
-  border-top: 5px solid hsla(176, 100%, 20%, 1);
+.hero__item:hover{
+  border-top: 12px solid hsla(176, 100%, 20%, 1);
   color: #f4a261;
 }
+
+.hero__item:has(+.hero__item:hover), .hero__item:hover + .hero__item{
+  border-top: 6px solid hsla(176, 100%, 20%, 1);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.hero__list:has(>:hover) .hero__item:not(:hover, :has(+ :hover), .hero__item:hover + *){
+  filter: blur(7px);
+  border-top: 2px solid hsla(176, 100%, 20%, 1);
+  -webkit-filter: blur(7px);
+}
+
 
 .hero__bottom-container{
   margin-top: auto;
   width: 100%;
+}
+
+@media (max-width:600px) {
+  .hero{
+    padding-block-start:100px;
+    background-position: center right -300px;
+  }
 }
 
 /*================= steps */
@@ -450,9 +470,13 @@ margin-block-end: 15px;
 }
 
 @media (max-width:470px) {
+  .steps{
+    padding-block: 30px;
+  }
   .steps__list{
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
   }
   .steps__item--line{
     display: none;
@@ -587,6 +611,9 @@ margin-block-end: 37px;
 }
 
 @media (max-width:600px) {
+  .approach__top{
+    padding-block: 30px;
+  }
     .approach__right{
       flex-wrap: wrap;
       justify-content: center;
@@ -948,6 +975,9 @@ color: rgba(53, 83, 98, 0.6);
 @media (max-width:600px) {
   .press{
     padding-block-start: 20px;
+  }
+  .press-card{
+    min-height: 90px;
   }
 }
 
