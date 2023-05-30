@@ -692,3 +692,49 @@ color: rgba(53, 83, 98, 0.6);
   inset: 0;
 }
 
+/* =================== where */
+
+.where {
+  padding-block: 155px 133px;
+  background-color: hsla(180, 100%, 6%, 1);
+}
+
+.where__content{
+  grid-column: 4 span;
+}
+
+.where__map{
+  grid-column:  7 / 5 span;
+}
+
+.where__title{
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 1.2px;
+  color: #FAFAFA;
+  margin-block-end: 43px;
+}
+
+.where__descr{
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: #FAFAFA;
+margin-block-end: 37px;
+}
+
+.where__btn{
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02px;
+  color: #FFFFFF;
+}
