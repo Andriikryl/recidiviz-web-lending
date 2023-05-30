@@ -633,8 +633,10 @@ color: #003331;
 }
 
 .press-card{
+  padding-block-start: 16px;
   min-height: 145px;
   position: relative;
+  border-top: 1px solid   rgba(53, 83, 98, 0.3);
 }
 
 .press-card__top{
@@ -689,3 +691,4 @@ color: rgba(53, 83, 98, 0.6);
   position: absolute;
   inset: 0;
 }
+
